@@ -1,0 +1,6 @@
+# Created by pytest automatically.
+logs
+results
+*.tfrecords
+.idea/
+__pycache__/
