@@ -18,7 +18,7 @@ def get_one_image(train):
     n = len(train)
     ind = np.random.randint(0, n)
     img_dir = train[ind]  # 随机选择测试的图片
-    target_img_dir = 'E:/deep learning/exe/test/results/'
+    target_img_dir = './results/'
     save_img(img_dir, target_img_dir)
     img = Image.open(img_dir)
     image = np.array(img)
@@ -41,7 +41,7 @@ def evaluate_one_image(image_array):
         x = tf.placeholder(tf.float32, shape=[256, 256, 3])
 
         # you need to change the directories to yours.
-        logs_train_dir = 'E:/deep learning/exe/test/logs'
+        logs_train_dir = './logs'
 
         saver = tf.train.Saver()
 
@@ -73,7 +73,7 @@ def save_img(img_dir, target_img_dir):
     plt.show()
 
 if __name__ == '__main__':
-    train_dir = 'E:/deep learning/exe/test/train_data_resized'
+    train_dir = './train_data_resized'
     train, train_label, val, val_label = get_files(train_dir, 0.1)
     img = get_one_image(val)  # 通过改变参数train or val，进而验证训练集或测试集
     evaluate_one_image(img)

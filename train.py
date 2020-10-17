@@ -16,8 +16,8 @@ MAX_STEP = 200  # 一般大于10K
 learning_rate = 0.0001  # 一般小于0.0001
 
 # 获取批次batch
-train_dir = 'E:/deep learning/exe/test/train_data_resized'  # 训练样本的读入路径
-logs_train_dir = 'E:/deep learning/exe/test/logs'  # logs存储路径
+train_dir = './train_data_resized'  # 训练样本的读入路径
+logs_train_dir = './logs'  # logs存储路径
 # logs_test_dir =  'E:/Re_train/image_data/test'        #logs存储路径
 
 # train, train_label = input_data.get_files(train_dir)

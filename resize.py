@@ -4,10 +4,10 @@ import tensorflow as tf
 from PIL import Image
 
 # 原始图片的存储位置
-orig_picture = 'E:/deep learning/exe/test/train_data_original'
+orig_picture = './train_data_original'
 
 # 生成图片的存储位置
-gen_picture = 'E:/deep learning/exe/test/train_data_resized'
+gen_picture = './train_data_resized'
 
 # 需要的识别类型
 classes = {'husky', 'jiwawa'}

@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # ============================================================================
 # -----------------生成图片路径和标签的List------------------------------------
 
-train_dir = 'E:/deep learning/exe/test/train_data_resized'
+train_dir = './train_data_resized'
 IMG_W = 28  # resize图像，太大的话训练时间久
 IMG_H = 28
 BATCH_SIZE = 20     # 每个batch要放多少张图片
